@@ -47,8 +47,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">L</span>
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+                {/* <span className="text-primary-foreground font-bold text-lg">L</span> */}
+                <img src="./public/favicon.ico" alt="ApniLoan Logo" className="w-10 h-10" />
               </div>
               <span className="font-bold text-xl">ApniLoan</span>
             </Link>
@@ -225,8 +226,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">L</span>
+              <div className="w-10 h-10  rounded-lg flex items-center justify-center">
+                {/* <span className="text-primary-foreground font-bold text-lg">L</span> */}
+                <img src="./public/favicon.ico" alt="ApniLoan Logo" className="w-10 h-10" />
               </div>
               <span className="font-bold text-xl">ApniLoan</span>
             </div>

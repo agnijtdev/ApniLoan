@@ -92,7 +92,7 @@ const Dashboard = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Welcome back, <span className="text-primary">{user?.name || 'User'}</span>
+              Welcome back, <span className="text-yellow-500">{user?.name || 'User'}</span>
             </h1>
             <p className="text-lg text-accent-foreground/80 mb-8">
               Explore our loan options and chat with our AI advisor to find the perfect loan for you.

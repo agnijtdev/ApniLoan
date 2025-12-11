@@ -28,14 +28,15 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">L</span>
+            <div className="w-10 h-8  rounded-lg flex items-center justify-center">
+              {/* <span className="text-primary-foreground font-bold text-lg">L</span> */}
+              <img src="./public/favicon.ico" alt="ApniLoan Logo" className="w-10 h-10" />
             </div>
-            <span className="font-bold text-xl">LoanFlow</span>
+            <span className="font-bold text-xl mx-[-5px]">ApniLoan</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-12">
             {isAuthenticated && navLinks.map((link) => (
               <Link
                 key={link.to}
@@ -43,7 +44,7 @@ const Navbar = () => {
                 className={cn(
                   'flex items-center gap-2 px-3 py-2 rounded-lg transition-colors',
                   isActive(link.to)
-                    ? 'bg-primary text-primary-foreground'
+                    ? 'bg-yellow-500 text-primary-foreground'
                     : 'hover:bg-accent-foreground/10'
                 )}
               >
